@@ -24,10 +24,10 @@ public class Solution {
         List<String> watch = new ArrayList<>();
         int[] hr = {1,2,4,8};
         int[] mn = {1,2,4,8,16,32};
-        for(int i=0;i<=num;i++) {
-            List<Integer> hours = generateDigits(hr,i);
-            List<Integer> minutes = generateDigits(mn,num-i);
-            for(int hour : hours) {
+        for(int i=0;i<=num;i++) { // loop through all the possibilities of value
+            List<Integer> hours = generateDigits(hr,i); // pass the list and i, which is the count of lights on
+            List<Integer> minutes = generateDigits(mn,num-i); // pass the list and num-i, as some lights are already glowing in hours
+            for(int hour : hours) { // add all the answers to watch
                 if(hour>11) {
                     continue;
                 }
@@ -49,12 +49,12 @@ public class Solution {
     }
     
     private void helper(List<Integer> res,int[] nums,int count,int start,int sum) {
-        if(count==0) {
+        if(count==0) { // base condition when the count becomes zero
             res.add(sum);
             return;
         }
-        for(int i=start;i<nums.length;i++) {
-            helper(res,nums,count-1,i+1,sum+nums[i]);
+        for(int i=start;i<nums.length;i++) { // loop for all values in list
+            helper(res,nums,count-1,i+1,sum+nums[i]); // count is decreasing, next value of list is to be used, sum is increased by value stored at position
         }
     }
     /*
