@@ -36,11 +36,11 @@
 ##################################################################################################
 
 322 : Coin Change
-070	: Climbing Stairs
-198	: House Robber
-121	: Best Time to Buy and Sell Stock
-303	: Range Sum Query - Immutable
-338	: Counting Bits
+070 : Climbing Stairs
+198 : House Robber
+121 : Best Time to Buy and Sell Stock
+303 : Range Sum Query - Immutable
+338 : Counting Bits
 039 : Combination Sum
 077 : Combinations
 254 : Factor Combinations
