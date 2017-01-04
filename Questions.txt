@@ -8,9 +8,6 @@
 054 : Spiral Matrix
 017 : Letter Combinations of a Phone Number
 023 : Merge k sorted Lists
-
-##################################################################################################
-
 155 : Min Stack
 232 : Implement Queue using Stacks
 225 : Implement Stack using Queues
@@ -20,9 +17,6 @@
 125 : Valid Palindrome
 401 : Binary Watch
 295 : Find Median from Data Stream
-
-##################################################################################################
-
 206 : Reverse Linked List
 141 : Linked List Cycle
 234 : Palindrome Linked List
@@ -32,9 +26,6 @@
 144 : Binary Tree Preorder Traversal
 094 : Binary Tree Inorder Traversal
 145 : Binary Tree Postorder Traversal 
-
-##################################################################################################
-
 322 : Coin Change
 070 : Climbing Stairs
 198 : House Robber
