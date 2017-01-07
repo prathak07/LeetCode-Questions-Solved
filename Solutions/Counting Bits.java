@@ -9,6 +9,7 @@ Follow up:
 It is very easy to come up with a solution with run time O(n*sizeof(integer)). But can you do it in linear time O(n) /possibly in a single pass?
 Space complexity should be O(n).
 Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.
+
 Hint:
 
 You should make use of what you have produced already.
@@ -19,7 +20,7 @@ public class Solution {
     public int[] countBits(int num) {
         int[] result = new int[num+1];
         
-        int p = 1; // for tracking the index of x
+        int p = 1; // for tracking the offset
         int pow = 1; // this is the number which is power of two
         
         for(int i=1;i<=num;i++) {
