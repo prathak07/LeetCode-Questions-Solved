@@ -17,13 +17,13 @@ public class Solution {
         int[] map = new int[256];
         int count=0,start=0,end=0,res=0;
         while(end<s.length()) {
-            if(map[s.charAt(end++)]++>0) {
+            if(map[s.charAt(end++)]++>0) { // this checks if the substring contains any duplicate
                 count++;
             }
             // System.out.println(count);
             // display(map);
-            while(count>0) {
-                if(map[s.charAt(start++)]-->1) {
+            while(count>0) { // if duplicate is present shrink the window
+                if(map[s.charAt(start++)]-->1) { 
                     count--;
                 }
             }
