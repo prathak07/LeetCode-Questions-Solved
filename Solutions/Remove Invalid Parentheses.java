@@ -29,19 +29,22 @@ public class Solution {
         while(!q.isEmpty()) {
             String str = q.poll();
             int level = levelQ.poll();
+            
+            if(found && max<level) {
+                break;
+            }
+            
+            // System.out.println(str+" "+level);
+            
             if(validParentheses(str)) {
                 res.add(str);
                 found = true;
                 max = level;
             }
-        
+            
             // if the parentheses is already found then continue to remaining entries left in queue and don't create another level of entries for the queue
             if(found) { 
                 continue;
-            }
-            
-            if(found && max<level) {
-                break;
             }
             
             // this loop creates successive strings with less parentheses thus creating levels for BFS
